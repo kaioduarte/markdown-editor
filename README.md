@@ -14,8 +14,7 @@ A simple and useful markdown editor that allows you to manage your files created
 
 ## Up and running
 
-- Clone this repository: `git clone git@github.com:kaioduarte/mardown-editor.git`;
-- Remove `.git` directory;
-- Install dependencies: `yarn i`;
+- Clone this repository;
+- Install dependencies: `yarn`;
 - Run `yarn build` for production build (files will be generated on `dist` directory)
 - Run `yarn start` to develop on `http://localhost:3000`
