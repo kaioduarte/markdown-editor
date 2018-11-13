@@ -1,0 +1,87 @@
+@charset 'utf-8';
+
+@import '~normalize-css/normalize.css';
+@import '~highlight.js/styles/dracula.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+body > div {
+  height: 100%;
+  width: 100%;
+}
+
+.editor {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.editor-header {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background: #333;
+}
+
+.editor-header > input {
+  padding-left: 15px;
+}
+
+.editor-header .save-message {
+  color: white;
+  padding: 0 20px;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+textarea,
+.view {
+  height: calc(100% - 40px);
+  min-width: 40%;
+  max-width: 40%;
+}
+
+textarea {
+  padding: 20px 0 0 15px;
+  resize: none;
+  font-size: 20px;
+}
+
+textarea:focus {
+  outline: 0 none;
+}
+
+.view {
+  background: rgb(26, 25, 25);
+  color: white;
+  overflow: auto;
+  padding-left: 20px;
+}
+
+.file-list-container {
+  min-width: 20%;
+  max-width: 20%;
+  height: calc(100% - 40px);
+}
+
+.file-list-title {
+  text-align: center;
+}
+
+.file-list-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.file-list-item.selected {
+  font-weight: bold;
+}
